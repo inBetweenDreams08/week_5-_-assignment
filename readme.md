@@ -39,3 +39,7 @@ Get all records by an artist
 - when run, this function should return an array of all records in "collection" that are by the given artist 
 
 **Reminder**: Make sure to answer this week's Slack discussion question!
+
+
+Here's an example of what the style could look like
+<img src="./example.png">
