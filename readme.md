@@ -19,8 +19,8 @@ Time to make our index.html page look cool!
 - place the `<h1>` and `<p>` in a header
 - add an `<h2>` into the header that says `YOUR NAME's Record Shop`
 - create a `stylesheet.css` file and source it into your index.html file.
-- look up the CSS `background-image` attribute to learn how to use the provided `record.png` as the background image on your page.
-- look up CSS `background-repeat` to learn how to make that image repeat itself in the body of the page.
+- look up the CSS `background-image` property to learn how to use the provided `record.png` as the background image on your page with a relative path.
+- look up CSS `background-size` to learn how to fill the body of the page.
 - Add a background color to the header to make it stand out
 
 Stretch Goals
