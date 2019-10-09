@@ -10,6 +10,20 @@ This week, we'll be exploring objects by creating an application to help maintai
 - add a function to your script named `addToCollection(title, artist, year)` that, when called, creates a new record object and pushes it into the "collection" array
 - this function should return the newly created record object
 
+CSS
+---
+Time to make our index.html page look cool!
+
+- place the `<h1>` and `<p>` in a header
+- add an `<h2>` into the header that says `YOUR NAME's Record Shop`
+- create a `stylesheet.css` file and source it into your index.html file.
+- look up the CSS `background-image` property to learn how to use the provided `record.png` as the background image on your page with a relative path.
+- look up CSS `background-size` to learn how to fill the body of the page.
+- Add a background color to the header to make it stand out
+
+Here's an example of what the style could look like
+<img src="./example.png">
+
 **Reminder**: Make sure to answer this week's Slack discussion question!
 
 ## Stretch Goals
@@ -45,3 +59,4 @@ This week, we'll be exploring objects by creating an application to help maintai
 - Add an `input` for `artist` and `year`. Add a `button` that says `Search` to `index.html`
 - When a user clicks `Search`, it should use flexible `search` to find all of the records that match, and list them out in an alert
 - For even *more* stretch. List the results on the DOM instead of in an alert
+
