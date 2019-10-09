@@ -10,8 +10,7 @@ This week, we'll be exploring objects by creating an application to help maintai
 - add a function to your script named `addToCollection(title, artist, year)` that, when called, creates a new record object and pushes it into the "collection" array
 - this function should return the newly created record object
 
-CSS
----
+### CSS
 Time to make our index.html page look cool!
 
 - place the `<h1>` and `<p>` in a header
@@ -40,11 +39,6 @@ Here's an example of what the style could look like
 - create a function called `allBy(artist)`
 - when run, this function should return an array of all records in "collection" that are by the given artist
 
-### Add record from DOM
-
-- Add an `input` for `title`, `artist`, and `year`. Add a `button` that says `Add a Record` to `index.html`
-- When a user clicks `Add a Record`, it should be added to the list in JavaScript
-
 ### Flexible search
 
 - create a function called `search(criteria)`
@@ -54,9 +48,15 @@ Here's an example of what the style could look like
     - If there is a year property `search({year: 1957})`, it should return all records from that year
     - If there is a year property and an artist property `search({artist: 'Ray Charles', year: 1957})`, it should return all records from that year by that artist
 
-### Search from DOM
 
-- Add an `input` for `artist` and `year`. Add a `button` that says `Search` to `index.html`
-- When a user clicks `Search`, it should use flexible `search` to find all of the records that match, and list them out in an alert
-- For even *more* stretch. List the results on the DOM instead of in an alert
+## Super Stretch
+
+### Add record from DOM
+
+>This is a *really* big stretch, but this is where we will be headed soon. This was not covered at all in this week's videos, so it will require a decent amount of additional research.
+
+- Add an `input` for `title`, `artist`, and `year`. Add a `button` that says `Add a Record` to `index.html`
+- When a user clicks `Add a Record`, it should be added to the list in JavaScript
+- This will take multiple steps in your code before calling your existing `addToCollection` function. 
+
 
