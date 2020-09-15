@@ -24,34 +24,23 @@ let vinyl_collection = [];
 // - add a function to your script named `addToCollection(title, artist, year)`
 function addToCollection(title, artist, year){
   console.log("inside of addToCollection func.", title);
+  vinyl_collection.push(title, artist, year);
 }
 
-addToCollection(vinyl_1);
+addToCollection(vinyl_4 = {
+  title: "Night Moves",
+  artist: "Bob Seger & The Silver Bullet Band",
+  year: 1976
+});
+
+console.log(vinyl_collection);
 //
 // that, when called, creates a new record object and pushes it into the "collection" array
 // - this function should return the newly created record object
 
 
+addToCollection(vinyl_5 ={});
 
+addToCollection(vinyl_5.title = "Don't Stop",vinyl_5.artist ="Fleetwood Mac", vinyl_5.year = 1988);
 
-// function addToCollection(title, artist, year){
-//   console.log("inside of addToCollection", title);
-  // vinyl_collection.push(vinyl_4 = {
-  //   title: "Night Moves",
-  //   artist: "Bob Seger & The Silver Bullet Band",
-  //   year: 1976
-  // });
-
- // end of func.
-
-// addToCollection(title: "Night Moves");
-
-// console.log(vinyl_1.title);
-
-
-// addToCollection(vinyl_1);
-
-
-// console.log(addToCollection);
-// console.log(vinyl_collection);
-// console.log(vinyl_1)
+console.log(vinyl_collection);
