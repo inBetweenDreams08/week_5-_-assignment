@@ -23,7 +23,7 @@ let vinyl_3 = {
 let vinyl_collection = [];
 // - add a function to your script named `addToCollection(title, artist, year)`
 function addToCollection(title, artist, year){
-  console.log("inside of addToCollection func.", title);
+  console.log("inside of addToCollection func." +" Title "+ title + " Artist "+ artist + " Year " + year);
   vinyl_collection.push(title, artist, year);
 }
 
@@ -41,6 +41,16 @@ console.log(vinyl_collection);
 
 addToCollection(vinyl_5 ={});
 
-addToCollection(vinyl_5.title = "Don't Stop",vinyl_5.artist ="Fleetwood Mac", vinyl_5.year = 1988);
+addToCollection
+(vinyl_5.title = "Don't Stop",
+vinyl_5.artist = "Fleetwood Mac",
+vinyl_5.year = 1988);
 
 console.log(vinyl_collection);
+
+
+
+
+// {
+//   title: "EverLong", artist: "FooFighters", year: 1997
+// }

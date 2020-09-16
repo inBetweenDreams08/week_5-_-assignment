@@ -1,0 +1,16 @@
+body{
+  background-color: #80cbad;
+  background-image: url(record.png);
+  background-size: auto;
+  height: 720px; /* You must set a specified height */
+  /* background-position: center; /* Center the image */ */
+  /* background-repeat: repeat; /* Do not repeat the image */ */
+  /* background-size: cover; /* Resize the background image to cover the entire container */ */
+}
+
+
+header{
+  background-color: #7a00fe;
+  text-align: center;
+  color: #f9fe00
+}
