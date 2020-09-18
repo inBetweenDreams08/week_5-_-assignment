@@ -7,13 +7,13 @@ console.log('js');
 //   artist: "Led Zeppelin",
 //   year: 1969
 
-
+// title: "Eight Days a Week",
+// artist: "The Beatles",1964
+// year: 1964
 
 //   title: "Ticket to Ride",
 //   artist: "The Beatles",
 //   year: 1965
-
-
 
 
 
@@ -99,52 +99,64 @@ console.log("------------------------------");
 //
     // - create a function called `search(criteria)`
 function search(criteria){
-console.log(criteria.artist);
-  let searchArray = [];
+  console.log(criteria.artist);
+    let searchArray = [];
     // - when run, this function should accept an object of search criteria,
     // and return an array of matching records
-    //     - If there is no object `search()` or an empty object `search({})`, it should return all records
 
-  if(criteria === undefined || criteria == 0) {
-   return vinyl_collection;
-  }
-  else if {
-      //     - If there is an artist property `search({artist: 'Ray Charles'})`, it should return all records by that artist
+
+
+    //     - If there is no object `search()` or an empty object `search({})`, it should return all records
+    if(criteria === undefined || criteria == 0) {
+     return vinyl_collection;
+    }
+    else if ( criteria.artist !== undefined && criteria.year == undefined ) {
+      //  - If there is an artist property `search({artist: 'Ray Charles'})`, it should return all records by that artist
       for (let i = 0; i < vinyl_collection.length; i++){
         if (vinyl_collection[i].artist === criteria.artist){
           searchArray.push(vinyl_collection[i]);
         }
       }
       return searchArray;
+    }
 
-  }
+    //  - If there is a year property `search({year: 1957})`, it should return all records from that year
+    else if (criteria.year !== undefined && criteria.artist == undefined) {
+      for (let i = 0; i < vinyl_collection.length; i++){
+        if (vinyl_collection[i].year === criteria.year){
+          searchArray.push(vinyl_collection[i]);
+        }
+      }
+      return searchArray;
+    }
 
-
-
-
-    //     - If there is a year property `search({year: 1957})`, it should return all records from that year
-if(search() == criteria.year){
-  searchArray.push(criteria)
-  console.log(criteria)
+    // - If there is a year property and an artist property `search({artist: 'Ray Charles', year: 1957})`, --
+    //  it should return all records from that year by that artist
+    else  {
+      for (let i = 0; i < vinyl_collection.length; i++){
+        if (vinyl_collection[i].year === criteria.year && vinyl_collection[i].artist === criteria.artist ){
+          searchArray.push(vinyl_collection[i]);
+        }
+      }
+      return searchArray;
+    }
 }
+  console.log(search(""));
 
-console.log(search({ 1964  }));
+  console.log(search({artist:"Led Zeppelin"}));
 
+  console.log(search({year: 1964 }));
 
-    //     - If there is a year property and an artist property `search({artist: 'Ray Charles', year: 1957})`,
-    //       it should return all records from that year by that artist
-}
-
-console.log(search(""));
-
-console.log(search({artist:"Led Zeppelin"}));
-// console.log(search({ 1964  }));
-
+  console.log(search({artist: "The Beatles", year: 1965 }));
 
 // console.log(search("Led Zeppelin"));
 
 
 
+//
+// else {
+//   criteria.year !== undefined && criteria.artist !== undefined
+// }
 
 
 // ..
